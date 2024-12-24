@@ -46,7 +46,7 @@ func Example() {
 
 	b := box.New(client)
 
-	info, err := b.Info()
+	info, err := b.Info(ctx)
 	if err != nil {
 		log.Fatalf("Failed get box info: %s", err)
 	}

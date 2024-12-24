@@ -1,6 +1,7 @@
 package box_test
 
 import (
+	"context"
 	"testing"
 
 	"github.com/stretchr/testify/require"
@@ -24,6 +25,6 @@ func TestNew(t *testing.T) {
 
 		// Calling Info on a box with a nil connection will result in a panic, since the underlying
 		// connection (Doer) cannot perform the requested action (it's nil).
-		_, _ = b.Info()
+		_, _ = b.Info(context.TODO())
 	})
 }

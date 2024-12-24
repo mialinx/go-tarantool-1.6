@@ -10,7 +10,11 @@ Versioning](http://semver.org/spec/v2.0.0.html) except to the first release.
 
 ### Added
 
+- Implemented box.schema.user operations requests and sugar interface.
+
 ### Changed
+
+- Box Info method now requires context and implements CallRequest type instead custom baseRequest.
 
 ### Fixed
 
