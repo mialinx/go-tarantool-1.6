@@ -5,7 +5,7 @@ box.cfg{
 }
 
 box.schema.user.create('test', { password = 'test' , if_not_exists = true })
-box.schema.user.grant('test', 'execute', 'universe', nil, { if_not_exists = true })
+box.schema.user.grant('test', 'super', nil)
 
 -- Set listen only when every other thing is configured.
 box.cfg{
